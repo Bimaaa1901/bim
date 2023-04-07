@@ -1,0 +1,11 @@
+pip install --user ccxt
+sudo apt-get update
+sudo apt-get install build-essential wget
+sudo apt-get install libpthread-stubs0-dev
+wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
+tar -xvzf ta-lib-0.4.0-src.tar.gz
+cd ta-lib/
+./configure --prefix=/usr
+make
+sudo make install
+pip install TA-Lib
